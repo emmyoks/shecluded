@@ -6,12 +6,19 @@
 
 .container-fluid{
     /* font-family: TT Commons; */
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:auto;
+}
+
+.container{
+    margin: 0 5%;
 }
 
 #logo_nav{
     width: 100%;
-    /* padding:10px; */
+    padding:5px 5%;
 }
 
 .nav_l a{
@@ -36,8 +43,14 @@ a:hover{
 .pink-txt{
     color: #F0008C;
 }
+.pink-line{
+    border-bottom: 2px solid #F0008C;
+}
 #back_to_work{
     position: relative;
+    background-image: url(img/bg.png);
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+    height: 90vh;
 }
 #back_to_work .text-box{
     background-color: rgba(255, 255, 255, 0.5);
@@ -46,7 +59,7 @@ a:hover{
     position: absolute ;
     /* left:5%; */
     top: 50%;                         
-    transform: translate(0, -50%) 
+    transform: translate(0, -50%);
 }
 #back_to_work .text-box h6{
     margin-bottom: 0;
@@ -61,9 +74,14 @@ a:hover{
 #overlooked{
     margin-top: 100px;
 }
-#overlooked img{
+#overlooked .img-frame{
     width: 100%;
-    height: 100%;
+    height:auto;
+}
+#overlooked img{
+    object-fit: fill;
+    width:100%;
+    height:auto;
 }
 #overlooked .section{
     margin-top: 50px;
@@ -95,22 +113,91 @@ box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
     margin:30px 0 ;
+    height: 80vh;
 }
 #approach .s-wrap{
-    position: relative;
-    height: 100px;
+    height: 130px;
+    width: 100%;
 }
 #approach .t-wrap{
     color: #ffffff;
-    height: 300px;
+    height: calc(100% - 130px);
 }
 #approach .sticker{
-    position: absolute;
-    top: 0;
-    left: 50%;                         
-    transform: translate(-50%, 0) ;
-    width: 120%;
-    /* padding: 50px; */
     background-color: #F0008C ;
     color: #ffffff;
+}
+
+#four-step{
+    padding: 0 3%;
+    margin: 5% 0;
+}
+#four-step .steps .col-3{
+    width: 100%;
+}
+#four-step .steps .img-frame{
+    margin:10%;
+    width: 80%;
+    height: auto;
+    position: relative;
+    border-radius:50%;
+}
+#four-step .steps .img-frame img{
+    object-fit: fill;
+    width:100%;
+    height:auto;
+    box-shadow: -20px -20px #F0008C ;
+    border-radius: 50%;
+}
+#four-step .steps .col-3 .img-frame .arrow{
+    position: absolute;
+    right:-20%;
+    top: 50%;
+    transform: translate(0, -50%) 
+}
+
+#connect {
+    background-color: #FFEEEE;
+    padding:100px 0;
+}
+
+#connect .steps .img-frame {
+    margin: 50px 0;
+    width:100%;
+    height:auto;
+}
+#connect .steps .img-frame img {
+    object-fit: fill;
+    width:100%;
+    height:auto;
+}
+
+#join{
+    padding: 100px 0;
+}
+#join .pink-btn{
+    margin-top: 50px;
+    padding:5px;
+    text-align: center;
+}
+
+#footer{
+    padding: 35px 100px;
+    background-color: #000000;
+    color: #ffffff;
+}
+#footer ul{
+    list-style-type:none;
+    border-top:1px solid #A6A6A6;
+    width:fit-content;
+    padding-top:20px;
+    margin-top:20px;
+}
+#footer ul a{
+    color:#A6A6A6;
+}
+#footer .copyright{
+    width:100%;
+    border-top:1px solid #A6A6A6;
+    padding-top:20px;
 }
