@@ -193,8 +193,19 @@ box-sizing: border-box;
     padding-top:20px;
     margin-top:20px;
 }
+#footer .social li{
+    display:inline;
+    margin:5px;
+    padding:5px;
+    background-color:#ffffff;
+    border-radius:50%;
+}
 #footer ul a{
     color:#A6A6A6;
+}
+#footer .social a{
+    color:#F0008C;
+    width:20px;
 }
 #footer .copyright{
     width:100%;
